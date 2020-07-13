@@ -1,0 +1,113 @@
+git config --global user.name "khalandarHS"
+git config --global user.email "khalandar.h.s@gmail.com"
+
+
+git config --global color.ui true
+git config --global core.editor emacs
+git config --global core.editor "vim"
+
+
+ssh-keygen -t rsa -C "khalandar.h.s@gmail.com"
+
+
+
+how to configure git with github in 2020
+
+install git
+create github account
+
+make a directory and initilize the project
+
+git init
+
+generate a key with fallowing ccommand
+
+ssh-keygen -t rsa -C "youremail@example.com"
+
+
+
+ ssh-keygen -t rsa -C "khalandar.h.s@gmail.com"
+ 
+ 
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/acer/.ssh/id_rsa): /c/Users/acer/.ssh/id_rsa
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/acer/.ssh/id_rsa
+Your public key has been saved in /c/Users/acer/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:mokwl/fD9IcMJQUpJ0RN6mDb/K8rfEFEOi81tfM5ums khalandar.h.s@gmail.com
+The key's randomart image is:
++---[RSA 3072]----+
+|     oo++oo      |
+|      oo=o .     |
+|    o +=+ +      |
+|   . B +.+ o .   |
+|  o + *.S   +    |
+|   + o X.+ o .   |
+|    ..+ =.= .    |
+|      o .oEo     |
+|       oo++.     |
++----[SHA256]-----+
+
+
+
+go to the directtory
+
+/c/Users/acer/.ssh/id_rsa
+
+
+
+clip < ~/.ssh/id_rsa.pub
+
+copy id_rsa.pub to clipboard
+
+
+
+test ssh to the github
+
+ssh -T git@github.com
+
+
+ $ ssh -T git@github.com
+The authenticity of host 'github.com (13.234.210.38)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com,13.234.210.38' (RSA) to the list of known hosts.
+Enter passphrase for key '/c/Users/acer/.ssh/id_rsa':
+Hi khalandarHS! You've successfully authenticated, but GitHub does not provide shell access.
+
+
+
+
+
+
+
+
+
+
+
+create a project file and commit
+
+vi index.html
+
+git add .
+
+git commit -m "commit"
+
+
+
+
+git remote add myorigin git@github.com:khalandarHS/techdevops.git
+
+ git push myorigin master
+ 
+ 
+ check the github
+
+
+
+
+
+
+
